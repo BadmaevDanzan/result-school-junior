@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "rollup": "^4.34.0"
+  },
+  "name": "task-19-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "Danzan Badmaev",
+  "license": "ISC",
+  "description": ""
+}
