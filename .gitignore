@@ -1,0 +1,59 @@
+# Dependencies
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# Build outputs
+**/dist/
+**/build/
+**/.output/
+**/public/bundle.*
+
+# Cache
+**/.cache/
+**/.temp/
+**/.rollup.cache/
+**/.rpt2_cache/
+**/.parcel-cache/
+**/.next/
+**/.nuxt/
+**/.vitepress/cache
+**/.eslintcache
+
+# Test coverage
+**/coverage/
+
+# Logs
+**/logs/
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Editor directories and files
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw?
+**/*.vim
+
+# Environment variables
+**/.env
+**/.env.*
+!**/.env.example
+
+# TypeScript
+**/*.tsbuildinfo
+
+# Optional
+**/stats.html
+**/.stylelintcache
+**/thumbs.db
+**/ehthumbs.db
+**/desktop.ini
