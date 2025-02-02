@@ -1,59 +1,101 @@
 # Dependencies
-**/**/node_modules/
-**/**/package-lock.json
-**/**/yarn.lock
-**/**/pnpm-lock.yaml
+node_modules
+**/node_modules
+package-lock.json
+**/package-lock.json
+yarn.lock
+**/yarn.lock
+pnpm-lock.yaml
+**/pnpm-lock.yaml
 
 # Build outputs
-**/**/dist/
-**/**/build/
-**/**/.output/
-**/**/public/bundle.*
+dist/
+**/dist/
+build/
+**/build/
+.output/
+**/.output/
+public/bundle.*
+**/public/bundle.*
 
 # Cache
-**/**/.cache/
-**/**/.temp/
-**/**/.rollup.cache/
-**/**/.rpt2_cache/
-**/**/.parcel-cache/
-**/**/.next/
-**/**/.nuxt/
-**/**/.vitepress/cache
-**/**/.eslintcache
+.cache/
+**/.cache/
+.temp/
+**/.temp/
+.rollup.cache/
+**/.rollup.cache/
+.rpt2_cache/
+**/.rpt2_cache/
+.parcel-cache/
+**/.parcel-cache/
+.next/
+**/.next/
+.nuxt/
+**/.nuxt/
+.vitepress/cache
+**/.vitepress/cache
+.eslintcache
+**/.eslintcache
 
 # Test coverage
-**/**/coverage/
+coverage/
+**/coverage/
 
 # Logs
-**/**/logs/
-**/**/*.log
-**/**/npm-debug.log*
-**/**/yarn-debug.log*
-**/**/yarn-error.log*
-**/**/pnpm-debug.log*
+logs/
+**/logs/
+*.log
+**/*.log
+npm-debug.log*
+**/npm-debug.log*
+yarn-debug.log*
+**/yarn-debug.log*
+yarn-error.log*
+**/yarn-error.log*
+pnpm-debug.log*
+**/pnpm-debug.log*
 
 # Editor directories and files
-**/**/.vscode/
-**/**/.idea/
-**/**/.DS_Store
-**/**/*.suo
-**/**/*.ntvs*
-**/**/*.njsproj
-**/**/*.sln
-**/**/*.sw?
-**/**/*.vim
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+.DS_Store
+**/.DS_Store
+*.suo
+**/*.suo
+*.ntvs*
+**/*.ntvs*
+*.njsproj
+**/*.njsproj
+*.sln
+**/*.sln
+*.sw?
+**/*.sw?
+*.vim
+**/*.vim
 
 # Environment variables
-**/**/.env
-**/**/.env.*
-!**/**/.env.example
+.env
+**/.env
+.env.*
+**/.env.*
+!.env.example
+!**/.env.example
 
 # TypeScript
-**/**/*.tsbuildinfo
+*.tsbuildinfo
+**/*.tsbuildinfo
 
 # Optional
-**/**/stats.html
-**/**/.stylelintcache
-**/**/thumbs.db
-**/**/ehthumbs.db
-**/**/desktop.ini
+stats.html
+**/stats.html
+.stylelintcache
+**/.stylelintcache
+thumbs.db
+**/thumbs.db
+ehthumbs.db
+**/ehthumbs.db
+desktop.ini
+**/desktop.ini
