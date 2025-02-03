@@ -27,7 +27,9 @@ export class App extends Component {
             onSubmit: this.onItemCreate.bind(this),
         });
         this.$rootElement.appendChild(donateForm.$rootElement);
-        const donateList = new List();
+        const donateList = new List({
+            onDeleteItem: this.onItemDelete.bind(this)
+        });
         this.$rootElement.appendChild(donateList.$rootElement);
 
         this.donateList = donateList;
@@ -40,5 +42,24 @@ export class App extends Component {
 
         this.state.total += amount;
         this.$total.textContent = `Итого: $${this.state.total}`;
+    }
+
+    onItemDelete(id) {
+        // Находим элемент по dataset id в кнопке Удалить
+        const item = this.state.donates.find(list => {
+            return list.state.id === id
+        })
+
+        // Фильтруем список без элемента
+        this.state.donates = this.state.donates.filter(i => i.state.id !== id);
+
+        // Отнимаем донат от общей суммы донатоы
+        this.state.total -= item.state.amount;
+
+        // Выводим общий донат
+        this.$total.textContent = `Итого: $${this.state.total}`;
+
+        // Удаляем в DOM элемент
+        this.donateList.deleteItem(item)
     }
 }
