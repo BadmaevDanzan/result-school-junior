@@ -15,7 +15,7 @@ export class ListItem extends Component {
       const day = String(this.state.date.getDate()).padStart(2, '0');
       const hours = this.state.date.getHours();
       const minutes = this.state.date.getMinutes();
-      const seconds = this.state.date.getSeconds();
+      const seconds = this.state.date.getSeconds().toString().padStart(2, '0');
 
       const convertDate = `${day}/${month}/${year}, ${hours}:${minutes}:${seconds}`;
 
